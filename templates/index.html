@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="static/image2.jpg">
+
+    <h1>WELCOME TO LOAN DEPARTMENT</h1>
+    <form method="POST" action="/loan_department">
+
+        <label>Int_rate:</label>        
+        <input type="text" name="int_rate">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Installment:</label>
+        <input type="text" name="installment">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Log_annual_inc:</label>
+        <input type="text" name="log_annual_inc">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Dti:</label>
+        <input type="text" name="dti">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Fico:</label>
+        <input type="text" name="fico">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Days_with_cr_line:</label>
+        <input type="text" name="days_with_cr_line">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Revol_bal:</label>
+        <input type="text" name="revol_bal">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Revol_util:</label>
+        <input type="text" name="revol_util">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Inq_last_6mths:</label>
+        <input type="text" name="inq_last_6mths">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Delinq_2yrs:</label>
+        <input type="text" name="delinq_2yrs">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Pub_rec:</label>
+        <input type="text" name="pub_rec">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Not_fully_paid:</label>
+        <input type="text" name="not_fully_paid">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Purpose:</label>
+        <select name="purpose">
+            <option value="credit_card">credit_card:</option>
+            <option value="educational">educational:</option>
+            <option value="home_improvement">home_improvement:</option>
+            <option value="small_business">small_business:</option>
+            <option value="major_purchase">major_purchase:</option>
+
+        </select>
+
+        <br>
+        <br>
+
+
+        <input type="submit" value="SUBMIT">
+        
+        <br>
+
+        <p>YOUR LOAN CREDIT STATUS IS <b> {{prediction}} </b></p>
+
+    </form>
+    
+</body>
+</html>
